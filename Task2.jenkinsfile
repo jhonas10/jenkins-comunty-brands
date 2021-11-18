@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+  
+    
+    stages {
+        stage('checkout') {
+            steps {
+                script{
+                    sh'git clone https://apwmofyqd6idd6pq32baxdr37bfnnyee4ypi5tcheml5x7lxm6sq@abilacollection.visualstudio.com/Abila/_git/DevOps-CI-CD'
+                }
+                
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
